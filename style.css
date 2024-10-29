@@ -11,7 +11,7 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.grid-container {
+.game {
   display: grid;
   grid-template-columns: repeat(3, 100px); /* 3 columns of equal width */
   grid-template-rows: repeat(3, 100px); /* 3 rows of equal height */
@@ -21,12 +21,13 @@ h1{
 }
 
 /* Styling each cell button */
-.grid-button {
+.boxes {
   font-size: 24px;
   font-weight: bold;
   background-color: #e0e0e0;
   border: 1px solid #333;
   display: flex;
+  color: royalblue;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -34,11 +35,11 @@ h1{
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
 }
 
-.grid-button:hover {
+.boxes:hover {
   background-color: #d3d3d3;
 }
 
@@ -59,4 +60,36 @@ h1{
 
 #reset-btn:hover {
   background-color: rgb(174, 164, 151);
+  cursor: pointer;
+}
+
+.winnershow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  gap: 2rem;  
+  color: white;
+}
+
+#new-btn{
+  background-color: antiquewhite;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  font-size: medium;
+  font-weight: bold;
+ 
+}
+
+#new-btn:hover {
+  background-color: rgb(174, 164, 151);
+  cursor: pointer;
+}
+
+.hide{
+  display: none;
 }

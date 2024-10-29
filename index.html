@@ -8,21 +8,25 @@
 </head>
 <body>
 <h1>TIC TAC TOE</h1>
-<div class="grid-container">
-    <button class="grid-button"></button>
-    <button class="grid-button"></button>
-    <button class="grid-button"></button>
-    <button class="grid-button"></button>
-    <button class="grid-button"></button>
-    <button class="grid-button"></button>
-    <button class="grid-button"></button>
-    <button class="grid-button"></button>
-    <button class="grid-button"></button>
+<div class="winnershow hide">
+    <p id="msg">winner</p>
+    <button id="new-btn">New game</button>
+</div>
+<div class="game">
+    <button class="boxes"></button>
+    <button class="boxes"></button>
+    <button class="boxes"></button>
+    <button class="boxes"></button>
+    <button class="boxes"></button>
+    <button class="boxes"></button>
+    <button class="boxes"></button>
+    <button class="boxes"></button>
+    <button class="boxes"></button>
 </div>
 <div id="reset">
     <button id="reset-btn">reset game</button>
 </div>
-
+<script src="script.js"></script>
 </body>
 </html>
 
